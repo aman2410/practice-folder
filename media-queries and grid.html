@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Queries</title>
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-image: linear-gradient(to right, #2d2727, #3e933e);
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+
+        }
+        h1{
+            color: #fff;
+        }
+        p{
+           
+            color: #fff;
+        }
+
+        .left-text{
+            flex-basis: 30%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            /* border: 2px solid white; */
+        }
+
+        .right-text{
+            display: grid;
+            flex-basis: 50%;
+            color: white;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 120px;
+        }
+
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #222;
+            background-blend-mode: luminosity;
+            transition: all 2s ease;
+            border-radius: 5px;
+        }
+        .image:hover{
+            background-position: bottom;
+            background-blend-mode:  lighten;
+            cursor: pointer;
+            box-shadow: 0 0 10px;
+        }
+
+        #box-1{
+            grid-row: span 2;
+        }
+        #box-2{
+            grid-column: span 2;
+        }
+        #box-4{
+            grid-row: span 2;
+        }
+        #box-5{
+            grid-column: span 2;
+        }
+        #box-7{
+            grid-column: span 2;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="left-text">
+            <h1>Portfolio</h1>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae magnam illum dignissimos consequatur velit et cum qui quam incidunt? Fugit ullam, quod commodi perferendis harum excepturi dolorum atque nobis velit!
+                Quibusdam quaerat sunt voluptatem aspernatur velit maiores culpa natus officia similique omnis! Aperiam vitae nihil similique. Fuga officia, est recusandae unde adipisci qui quos eveniet harum alias sequi laboriosam perferendis.
+            </p>
+        </div>
+        
+        <div class="right-text">
+            <div class="image" id="box-1" style="background-image: url(https://images.unsplash.com/photo-1708261432863-41fdab7b5de9?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Flower</div>
+            <div class="image" id="box-2" style="background-image: url(https://images.unsplash.com/photo-1713252579588-641976f56ff5?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Home</div>
+            <div class="image" id="box-3" style="background-image: url(https://images.unsplash.com/photo-1713791234907-0daa87dfd658?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Garden</div>
+            <div class="image" id="box-4"style="background-image:  url(https://images.unsplash.com/photo-1713701252745-893fd9cc2005?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Painted Wall</div>
+            <div class="image" id="box-5" style="background-image: url(https://plus.unsplash.com/premium_photo-1682708140120-b13ced69afed?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Beach</div>
+            <div class="image" id="box-6" style="background-image: url(https://plus.unsplash.com/premium_photo-1681406994530-3de7406c21a5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Food</div>
+            <div class="image" id="box-7" style="background-image: url(https://images.unsplash.com/photo-1713748241765-820752633244?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Eyes</div>
+        </div>
+
+    </div>
+</body>
+</html>
