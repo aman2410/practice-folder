@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            width: auto;
+            background-color: #2196F3;
+            padding: 20px;
+            gap: 10px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .box {
+            padding: 40px;
+            border: 1px solid blue;
+            background-color: #d3eafd;
+            font-size: 3rem;
+            text-align: center;
+            align-content: center;
+
+
+        }
+
+        #box-1{
+            grid-column-start: span 4;
+            grid-row-end: span 1;
+        }
+
+        #box-12{
+            grid-column-start: span 4;
+        }
+
+        #box-10{
+            grid-row-start: span 3;
+            grid-row-end: span 4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="box" id="box-1">1</div>
+        <div class="box" id="box-2">2</div>
+        <div class="box" id="box-3">3</div>
+        <div class="box" id="box-4">4</div>
+        <div class="box" id="box-5">5</div>
+        <div class="box" id="box-6">6</div>
+        <div class="box" id="box-7">7</div>
+        <div class="box" id="box-8">8</div>
+        <div class="box" id="box-9">9</div>
+        <div class="box" id="box-10">10</div>
+        <div class="box" id="box-11">11</div>
+        <div class="box" id="box-12">12</div>
+        <div class="box" id="box-13">13</div>
+        <div class="box" id="box-14">14</div>
+        <div class="box" id="box-15">15</div>
+
+    </div>
+</body>
+
+</html>
