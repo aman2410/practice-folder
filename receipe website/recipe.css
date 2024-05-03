@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: young-serif;
+}
+
+body {
+    background-color: #f3e4d9;
+    height: 242vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #fff;
+    width: 50vw;
+    height: fit-content;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#food_image {
+    padding: 30px;
+    width: 100%;
+    height: 300px;
+    border-radius: 40px;
+}
+
+#h1-tag {
+    margin-left: 30px;
+    font-family: young Serif Regular;
+    font-weight: 500;
+}
+
+#span-1 {
+    font-family: outfit;
+    margin: 0 30px;
+    color: #575754;
+    font-weight: 500;
+}
+
+.sub-container {
+    background-color: rgb(222 169 196 / 21%);
+    width: 92%;
+    justify-content: center;
+    align-self: center;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sub-container-2 li {
+    font-family: outfit;
+    padding: 2.5px;
+}
+
+.sub-container-2 li span {
+    font-weight: 600;
+    font-family: outfit;
+    color: #575754;
+}
+
+li::marker {
+    color: #6f5b57;
+}
+
+ol li::marker {
+    color: #86544f;
+    font-weight: 600;
+}
+
+.sub-container-3 {
+    font-family: outfit;
+}
+
+.table-data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    column-gap: 30px;
+    padding: 10px;
+}
+
+.td1 {
+    border-bottom: 1px solid rgb(208, 208, 208);
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.td2 {
+    border-bottom: 1px solid rgb(208, 208, 208);
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.td3 {
+    border-bottom: 1px solid rgb(208, 208, 208);
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.td4 {
+    /* border-bottom: 1px solid rgb(208, 208, 208); */
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.sub-container ul {
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sub-container li {
+    /* list-style: inside;  */
+    font-family: outfit;
+    color: #575754;
+}
+
+.sub-container-2 {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#sub-container-2 {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sub-container-2 ul {
+    list-style: inside;
+    border-bottom: 0.5px solid rgb(227, 227, 227);
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#sub-container-3 {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (max-width:320px) {
+    body {
+        height: fit-content;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #food_image {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: unset;
+        background-position: unset;
+    }
+
+    #h1-tag {
+        margin: 1.2rem;
+        font-size: 1.9rem;
+
+    }
+
+    #span-1 {
+        margin: 0 1.3rem;
+        font-size: 0.99rem;
+    }
+
+    .sub-container {
+        width: 89%;
+
+    }
+
+    .sub-container ul {
+        list-style: outside;
+        margin-left: 1.1rem;
+    }
+
+    .sub-container-2 {
+        margin: 0 1.2rem 1.2rem;
+
+    }
+
+    .sub-container-2 ul {
+        list-style: outside;
+        margin-left: 1.2rem;
+    }
+
+    #sub-container-2 {
+        margin: 0 1.2rem;
+
+    }
+
+    #sub-container-3 {
+        margin: 1.2rem;
+    }
+
+
+}
+
+@media (max-width:375px) {
+    body {
+        height: fit-content;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #food_image {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: unset;
+        background-position: unset;
+    }
+
+    #h1-tag {
+        margin: 1.2rem;
+        font-size: 1.9rem;
+
+    }
+
+    #span-1 {
+        margin: 0 1.3rem;
+        font-size: 0.99rem;
+    }
+
+    .sub-container {
+        width: 89%;
+
+    }
+
+    .sub-container ul {
+        list-style: outside;
+        margin-left: 1.1rem;
+    }
+
+    .sub-container-2 {
+        margin: 0 1.2rem 1.2rem;
+
+    }
+
+    .sub-container-2 ul {
+        list-style: outside;
+        margin-left: 1.2rem;
+    }
+
+    #sub-container-2 {
+        margin: 0 1.2rem;
+
+    }
+
+    #sub-container-3 {
+        margin: 1.2rem;
+    }
+
+
+}
+
+@media (max-width:425px) {
+    body {
+        height: fit-content;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #food_image {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: unset;
+        background-position: unset;
+    }
+
+    #h1-tag {
+        margin: 1.2rem;
+        font-size: 1.9rem;
+
+    }
+
+    #span-1 {
+        margin: 0 1.3rem;
+        font-size: 0.99rem;
+    }
+
+    .sub-container {
+        width: 89%;
+
+    }
+
+    .sub-container ul {
+        list-style: outside;
+        margin-left: 1.1rem;
+    }
+
+    .sub-container-2 {
+        margin: 0 1.2rem 1.2rem;
+
+    }
+
+    .sub-container-2 ul {
+        list-style: outside;
+        margin-left: 1.2rem;
+    }
+
+    #sub-container-2 {
+        margin: 0 1.2rem;
+
+    }
+
+    #sub-container-3 {
+        margin: 1.2rem;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        height: fit-content;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #food_image {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: unset;
+        background-position: unset;
+    }
+
+    #h1-tag {
+        margin: 1.2rem;
+        font-size: 1.9rem;
+
+    }
+
+    #span-1 {
+        margin: 0 1.3rem;
+        font-size: 0.99rem;
+    }
+
+    .sub-container {
+        width: 89%;
+
+    }
+
+    .sub-container ul {
+        list-style: outside;
+        margin-left: 1.1rem;
+    }
+
+    .sub-container-2 {
+        margin: 0 1.2rem 1.2rem;
+
+    }
+
+    .sub-container-2 ul {
+        list-style: outside;
+        margin-left: 1.2rem;
+    }
+
+    #sub-container-2 {
+        margin: 0 1.2rem;
+
+    }
+
+    #sub-container-3 {
+        margin: 1.2rem;
+    }
+
+
+}
